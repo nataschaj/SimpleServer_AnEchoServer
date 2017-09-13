@@ -21,16 +21,16 @@ namespace WcfServiceCalculator
 
         // TODO: Add your service operations here
         [OperationContract]
-        string GetMultiply();
+        int GetMultiply(int tal1, int tal2);
 
         [OperationContract]
-        string GetSubtract();
+        int GetSubtract(int tal1, int tal2);
 
         [OperationContract]
-        string GetDivide();
+        int GetDivide(int tal1, int tal2);
 
         [OperationContract]
-        string GetAdd();
+        int GetAdd(int tal1, int tal2);
     }
 
 

@@ -10,9 +10,8 @@ namespace WcfServiceCalculator
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : ICalculatorService
+    public class CalculatorService : ICalculatorService
     {
-        
 
         public string GetData(int value)
         {
@@ -32,24 +31,28 @@ namespace WcfServiceCalculator
             return composite;
         }
 
-        public string GetAdd()
+
+        //Metoder for lommeregner
+        public int GetDivide(int tal1, int tal2)
         {
-            throw new NotImplementedException();
+            return tal1 / tal2;
         }
 
-        public string GetDivide()
+        public int GetMultiply(int tal1, int tal2)
         {
-            throw new NotImplementedException();
+            return tal1 * tal2;
         }
 
-        public string GetMultiply()
+        public int GetSubtract(int tal1, int tal2)
         {
-            throw new NotImplementedException();
+            return tal1 - tal2;
         }
 
-        public string GetSubtract()
+        public int GetAdd(int tal1, int tal2)
         {
-            throw new NotImplementedException();
+            return tal1 + tal2;
         }
+        
+
     }
 }
