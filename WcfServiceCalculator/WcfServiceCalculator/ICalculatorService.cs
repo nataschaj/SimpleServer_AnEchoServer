@@ -31,6 +31,8 @@ namespace WcfServiceCalculator
 
         [OperationContract]
         int GetAdd(int tal1, int tal2);
+
+
     }
 
 
